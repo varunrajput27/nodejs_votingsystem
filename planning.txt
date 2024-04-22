@@ -1,0 +1,49 @@
+voting application
+what ??
+A functionality where user can give vote to the given set of candidates
+
+
+MOdels ??
+Routes ??
+
+voting app functionality :-
+
+what ??
+
+1. user sign in /sign up
+2. see the list of candidate
+3. vote one of the candidate
+4. there is a route which  shows the list of candidate and their live vote count sorted by their vote count
+5. user dta must cintain their ome vlaue governmant id proof named : adhar card
+6. there should be one admin who maintain the list of candidate and he can't able to vote at all
+7. user can change their password
+8. user can login ony with aadhar chard number and password
+9. admin can't vote
+
+---------------------------------------------------------------------------------
+Routes ??
+
+user authentication
+
+/sign up:post -create a new username
+/login :post-login in to existing account{adhar card+password}
+
+voting 
+
+/candidate:get=get the list of candidate
+/vote/:candidateid:post-vote for a specific candidate
+
+vote count 
+
+/vote/counts: get-get the list of candidate sorted by their vote counts
+
+user profile
+
+profile:get - get the user profile information
+profil/passwod:put- change the user password
+
+admin candidate management 
+ candidate: post-create a new candidate
+ candidate/:candidateid:put-update an existing candidate
+ candidate/:candidateid:delete-delete a candidate from the list.
+
